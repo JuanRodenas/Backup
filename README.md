@@ -27,7 +27,7 @@ TOKEN_ID="YOUR_TOKEN_CHAT"
 
 #### Edita el script backupother.sh, para añadir tu token de bot, y tu chat_id
 Este script realiza el backup y lo envía a otra máquina. Utilizaremos SPC, la conexión está cifrada.
-Descargar el script [script backupother.sh](https://github.com/JuanRodenas/AutoUpdate/blob/main/autoupdate.sh)
+Descargar el script [script backupother.sh](https://github.com/JuanRodenas/Backup/blob/main/backupother.sh)
 Y modicamos lo siguiente:
 ~~~
 TOKEN_BOT="YOUR_TOKEN_BOT"
