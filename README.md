@@ -45,7 +45,7 @@ Abrimos el cron
 ~~~
 crontab -e
 ~~~
-Y añadimos las líneas, el cron los ejecutará cada día, para está al día de los paquetes
+Y añadimos las líneas, el cron los ejecutará cada día que hayamos elegido.
 ~~~
 00 23 1,15 * * /root/scripts/backup.sh >/dev/null 2>&1
 30 23 1,15 * * /root/scripts/backupother.sh >/dev/null 2>&1
