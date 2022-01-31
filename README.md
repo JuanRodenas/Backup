@@ -51,6 +51,9 @@ Y añadimos las líneas, el cron los ejecutará cada día que hayamos elegido.
 00 23 1,15 * * /root/scripts/backup.sh >/dev/null 2>&1
 30 23 1,15 * * /root/scripts/backupother.sh >/dev/null 2>&1
 ~~~
-
+Y reinciamos el cron:
+~~~
+service cron restart 
+~~~
 El funcionamiento es sencillo, cada día 1 y 15 de cada mes, se realizará una copia de seguridad.
 ### Ready!
