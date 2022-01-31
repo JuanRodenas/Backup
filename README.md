@@ -15,6 +15,7 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt curl -y
 ~~~
+<sup>**Si no estamos en usuario root, usamos `sudo` delante**.</sup>
 
 #### Edita el script backup.sh, para añadir tu token de bot, y tu chat_id
 Este script realiza el backup y lo envía a otro disco duro.
@@ -39,7 +40,7 @@ TOKEN_ID="YOUR_TOKEN_CHAT"
 chmod a+x /root/scripts/backup.sh
 chmod a+x /root/scripts/backupother.sh
 ~~~
-
+<sup>**Si no estamos en usuario root, usamos `sudo` delante**.</sup>
 ### Agregamos al cron las siguientes lineas para que se ejecuten
 Abrimos el cron
 ~~~
