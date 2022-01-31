@@ -27,10 +27,10 @@ Para realizar una copia de seguridad de archivos utilizaremos la opción **`TAR`
 * v --> indica que se trabaje en modo verbose, o lo que es lo mismo, que tar mostrará qué está haciendo en pantalla.
 * z --> comprime el fichero backup con gzip para hacerlo más pequeño
 * f /fichero --> precede al nombre del fichero /fichero donde vamos a guardar el backup.
-* P para preservar el path absoluto del recurso guardado.
-* p para mantener los permisos.
+* P --> para preservar el path absoluto del recurso guardado.
+* p --> para mantener los permisos.
 * x --> Extrae, y descomprime si se da el caso, los directirios y archivos que se encuentren dentro del fichero.tar específico
-* -t, --list --> Listar el contenido de un archivo. Cuando se dan, especifican los nombres de los miembros a listar.
+* t --> Listar el contenido de un archivo. Cuando se dan, especifican los nombres de los miembros a listar.
 
 **Modificadores de la operación**
 * -G, --incremental
