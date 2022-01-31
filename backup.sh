@@ -2,7 +2,7 @@
 # Script de Juan Rodenas Sánchez
 # Script copias de seguridad regulares
 
-# Accedemos a la carpeta docker
+# Nos colocamos en el directorio
 cd /home/${USER}/docker/
 
 # Realizamos copia de seguridad traefik
