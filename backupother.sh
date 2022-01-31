@@ -11,8 +11,8 @@ docker stop adguard && sleep 5 && sudo tar -cvzf /backup/adguard_$(date +%A-%d-%
 scp user@1.2.3.4:/ruta/servidor/remoto/archivo.tar.gz adguard_$(date +%A-%d-%m-%Y).tar.gz
 
 # requeriments:
-TOKEN="2069253293:AAFHWHZvZqFiwEJUFj0NAS89dacYCCmtKxo"
-ID="654825626"
+TOKEN="YOUR_TOKEN_BOT"
+ID="YOUR_TOKEN_CHAT"
 URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 DNS="1.1.1.1"
 servidor=$(hostname)
