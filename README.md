@@ -103,4 +103,17 @@ Y reinciamos el cron:
 service cron restart 
 ~~~
 El funcionamiento es sencillo, cada día 1 y 15 de cada mes, se realizará una copia de seguridad.
+
+## Restaurar backup
+Si queremos recuperar el backup de la config, desempaquetamos el .tar.gz del volumen en el directorio del contenedor, antes de desplegar la imagen. Desplegamos el docker-compose.yml y cuando la despliegas esta todo como estaba antes.
+Para descomprimir un archivo `.tar.gz`.:
+~~~
+tar -xvzf archive.tar.gz
+~~~
+Para descomprimir un archivo `.tar.gz` en un directorio específico:
+~~~
+tar -xvzf archive.tar.gz -C /home/docker/files
+~~~
+<sup>**Si no estamos en usuario root, usamos `sudo` delante de tar o zip**.</sup>
+
 ### Ready!
