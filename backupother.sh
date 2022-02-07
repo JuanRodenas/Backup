@@ -17,7 +17,7 @@ URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 DNS="1.1.1.1"
 servidor=$(hostname)
 MSG="\U1F4BE $servidor informa \U2139"
-IP=`w -h | awk '{print""$3}'`
+IP=`hostname -I | awk '{print $1}'`
 mensaje="\U2139 $servidor informa que ha realizado la copia de seguridad mensual y se han eliminado los backups más antiguos del servidor"
 
 # Envío del mensaje
