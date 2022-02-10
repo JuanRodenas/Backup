@@ -94,16 +94,16 @@ crontab -e
 ~~~
 Y añadimos las líneas, el cron los ejecutará cada día que hayamos elegido.
 ~~~
-00 23 1,15 * * /root/scripts/backup.sh >/dev/null 2>&1
+00 23 1,15 * * /root/scripts/backup.sh
 ~~~
 
 #### Ejemplos
 | Tiempo | Comando | Description |
 | :-- | :-- | :-- |
-| Cada 15 de mes | 00 23 15 * * /root/scripts/backup.sh >/dev/null 2>&1 | Cada 15 de mes a las 23h |
-| Cada 1 y 15 de mes | 00 23 1,15 * * /root/scripts/backup.sh >/dev/null 2>&1 | Cada 1 y 15 de mes a las 23h |
-| Cada Lunes a las 7 de la mañana | 0 19 * * mon /root/scripts/backup.sh >/dev/null 2>&1  | - |
-| En los meses seleccionados | * * * feb,jun,oct * /root/scripts/backup.sh >/dev/null 2>&1  | - |
+| Cada 15 de mes | 00 23 15 * * /root/scripts/backup.sh | Cada 15 de mes a las 23h |
+| Cada 1 y 15 de mes | 00 23 1,15 * * /root/scripts/backup.sh | Cada 1 y 15 de mes a las 23h |
+| Cada Lunes a las 7 de la mañana | 0 19 * * mon /root/scripts/backup.sh  | - |
+| En los meses seleccionados | * * * feb,jun,oct * /root/scripts/backup.sh  | - |
 | Diariamente | @daily /root/scripts/backup.sh   | Ejecutar una vez al día, 0 0 * * * |
 | Cada semana | @weekly /root/scripts/backup.sh | Ejecutar una vez a la semana, 0 0 * * 0 |
 | Cada mes | @monthly /root/scripts/backup.sh | Ejecutar una vez al mes,  0 0 1 * * |
