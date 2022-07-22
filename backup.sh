@@ -6,7 +6,7 @@
 cd /home/${USER}/docker/
 
 # Realizamos copia de seguridad traefik
-docker stop {CONTAINER} && sleep 5 && sudo tar -cvzf /DESTINO/backup_$(date +%A-%d-%m-%Y).tar.gz {ORIGEN} && docker start {CONTAINER}
+docker stop {CONTAINER} && sleep 5 && sudo tar -cvzf /DESTINO/backup_$(date +%A_%d-%m-%Y_%H).tar.gz {ORIGEN} && docker start {CONTAINER}
 
 # Borramos copias de seguridad más antiguas
 sudo find /backup* -mtime +60 -type f -exec rm {} \;
